@@ -6,3 +6,7 @@ Artinya kedua program tersebut akan saling terkoneksi degan amqp yang sama. Sehi
 
 # Runnign RabbitMQ as Message Broker
 ![img.png](images/RunningRabbitMQAsMssgBroker.png)
+
+# Sending and Processing Event
+![img.png](images/SendingAndProcessingEvent.png)
+Daoat dilihat bahwa terjadi proses pengiriman data dari _publisher_ kepada _subscriber_ melalui _message broker_ RabbitMQ. 

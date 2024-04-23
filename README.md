@@ -9,4 +9,8 @@ Artinya kedua program tersebut akan saling terkoneksi degan amqp yang sama. Sehi
 
 # Sending and Processing Event
 ![img.png](images/SendingAndProcessingEvent.png)
-Daoat dilihat bahwa terjadi proses pengiriman data dari _publisher_ kepada _subscriber_ melalui _message broker_ RabbitMQ. 
+Daoat dilihat bahwa terjadi proses pengiriman data dari _publisher_ kepada _subscriber_ melalui _message broker_ RabbitMQ.
+
+# Monitoring chart based on publisher.
+![img.png](images/MonitoringChart.png)
+Sebelumnya, saya jalankan `cargo run` pada Publisher sekali saja. Hanya terdapat satu puncak saja pada _message rates_. Lalu saya coba jalankan `cargo run` kedua kali pada Publisher, maka akan terdapat 2 puncak pada _message rates_. Maka dapat dilihat bahwa _message rates_ meningkat ketika dijalankan `cargo run` pada Publisher. Cara kerjanya adalah Publisher akan mengirimkan data kepada RabbitMQ, lalu RabbitMQ akan mengirimkan data kepada Subscriber.
